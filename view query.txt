@@ -1,0 +1,46 @@
+use car_sales_data;
+
+1) select * from customer;
+
+2) select name, city , rating 
+from customer;
+
+3) select SalesID , Rating,Customerid 
+from customer;
+
+
+create view  custview 
+as 
+select * from customer;
+
+select * from custview;
+
+create view custview1
+as
+select name , city , rating
+from customer;
+select * from custview1;
+insert into custview1 values('chait','Kolkata',200)
+delete from custview1 where name='Grass'
+
+
+
+select * from orders
+
+
+create view custview2
+as
+select name , city ,rating , amount, order_date
+from customer c  join orders o 
+on(c.customerid = o.customerid)
+
+Join it operations  Costly Operations 
+1)memory 2) input /output 3)cpu 4)osprocess
+Album ,Artist, Genere, Song 
+
+mysql -> documentation/javatpoint mysql 
+
+
+select * from custview2
+
+insert into custview2 values('xx','kolkata',200,300, current_date())
